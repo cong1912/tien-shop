@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="mkdf-content">
+  <div class="mkdf-content-inner">
+    <div class="mkdf-title-holder mkdf-standard-type mkdf-title-va-header-bottom"
+      style="height: 90px;background-color: #fbf9f9" data-height="90">
+      <div class="mkdf-title-wrapper" style="height: 90px">
+        <div class="mkdf-title-inner">
+          <div class="mkdf-grid">
+            <h4 class="mkdf-page-title entry-title">My Account</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mkdf-container mkdf-default-page-template">
+      <div class="mkdf-container-inner clearfix">
+        <div class="mkdf-grid-row ">
+          <div class="mkdf-page-content-holder mkdf-grid-col-12">
+            <div class="woocommerce">
+              <div class="woocommerce-notices-wrapper"></div>
+              <p class="mkdf-empty-cart-custom">perfect shades</p>
+              <h2 class="mkdf-empty-cart-title">Login</h2>
+              <h5 class="mkdf-empty-cart-text">At vero eos et accusamus et</h5>
+              <form class="woocommerce-form woocommerce-form-login login" method="post">
+                <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                  <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username"
+                    id="username" placeholder="Username or email address *" autocomplete="username" value="">
+                </p>
+                <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                  <input class="woocommerce-Input woocommerce-Input--text input-text" type="password"
+                    name="password" id="password" placeholder="Password *" autocomplete="current-password">
+                </p>
+                <p class="form-row">
+                  <label
+                    class="woocommerce-form__label woocommerce-form__label-for-checkbox woocommerce-form-login__rememberme">
+                  </label>
+                  <input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce"
+                  value="6464a998e4"><input type="hidden" name="_wp_http_referer" value="/my-account/"> <button
+                  type="submit"
+                    class="woocommerce-button button woocommerce-form-login__submit mkdf-btn mkdf-btn-outline-force"
+                    name="login" value="Log in">Log in</button>
+                    <input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme"
+                      type="checkbox" id="rememberme" value="forever"> <span>Remember me</span>
+                </p>
+                <p class="woocommerce-LostPassword lost_password">
+                  <a href="shop-lost-password">Lost your password?</a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

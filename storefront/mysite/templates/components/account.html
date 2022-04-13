@@ -1,0 +1,146 @@
+{% load static %}
+
+<div class="mkdf-login-holder mkdf-modal-holder" data-modal="login">
+	<div class="mkdf-login-content mkdf-modal-content">
+		<div class="mkdf-login-content-inner mkdf-modal-content-inner">
+			<div class="mkdf-login-content-text">
+				<p>Already have an account?</p>
+				<h2>Log In</h2>
+			</div>
+			<div class="mkdf-wp-login-holder">
+				<div class="mkdf-wp-login-holder">
+					<div class="mkdf-social-login-holder">
+						<div class="mkdf-social-login-holder-inner">
+							<form method="post" class="mkdf-login-form">
+								<fieldset>
+									<div>
+										<input type="text" name="user_login_name" id="user_login_name" placeholder="Username*" value=""
+											required="" pattern=".{3,}" title="Three or more characters">
+									</div>
+									<div>
+										<input type="password" name="user_login_password" id="user_login_password" placeholder="Password*"
+											value="" required="">
+									</div>
+									<input type="hidden" name="redirect" id="redirect" value="">
+									<div class="mkdf-login-remember">
+										<div class="mkdf-login-button-holder">
+											<button type="submit" class="mkdf-btn mkdf-btn-medium mkdf-btn-outline"> <span
+													class="mkdf-btn-text">Log in</span> </button> <input type="hidden" id="mkdf-login-security"
+												name="mkdf-login-security" value="b4c1e97742"><input type="hidden" name="_wp_http_referer"
+												value="/grid-home/">
+										</div>
+										<div class="mkdf-remember-holder">
+											<span class="mkdf-login-remember">
+												<input name="rememberme" value="forever" id="rememberme" type="checkbox">
+												<label for="rememberme" class="mkdf-checbox-label">Remember me</label>
+											</span>
+										</div>
+									</div>
+									<div class="mkdf-lost-pass-remember-holder clearfix">
+										<div class="mkdf-lost-pass-holder">
+											<a href="#" class="mkdf-modal-opener" data-modal="password">Lost your password?</a>
+										</div>
+									</div>
+									<div class="mkdf-register-link-holder">
+										<p class="mkdf-register-label">Don’t have an account?</p>
+										<a href="#" class="mkdf-btn mkdf-btn-huge mkdf-btn-outline mkdf-modal-opener "
+											data-modal="register">Create an account</a>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+						<div class="mkdf-membership-response-holder clearfix"></div>
+						<script type="text/template" class="mkdf-membership-response-template">
+					<div class="mkdf-membership-response <%= messageClass %> ">
+						<div class="mkdf-membership-response-message">
+							<p><%= message %></p>
+						</div>
+					</div>
+				</script>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="mkdf-register-holder mkdf-modal-holder" data-modal="register">
+	<div class="mkdf-register-content mkdf-modal-content">
+		<div class="mkdf-register-content-inner mkdf-modal-content-inner" id="mkdf-register-content">
+			<div class="mkdf-login-content-text">
+				<h2>Create An Account</h2>
+			</div>
+			<div class="mkdf-wp-register-holder">
+				<div class="mkdf-social-register-holder">
+					<form method="post" class="mkdf-register-form">
+						<fieldset>
+							<div>
+								<input type="text" name="user_register_name" id="user_register_name" placeholder="Username*" value=""
+									required="" pattern=".{3,}" title="Three or more characters">
+							</div>
+							<div>
+								<input type="email" name="user_register_email" id="user_register_email" placeholder="Email*" value=""
+									required="">
+							</div>
+							<div>
+								<input type="password" name="user_register_password" id="user_register_password" placeholder="Password*"
+									value="" required="">
+							</div>
+							<div>
+								<input type="password" name="user_register_confirm_password" id="user_register_confirm_password"
+									placeholder="Repeat Password*" value="" required="">
+							</div>
+							<div class="mkdf-register-button-holder">
+								<button type="submit" class="mkdf-btn mkdf-btn-medium mkdf-btn-outline"> <span
+										class="mkdf-btn-text">Register</span> </button><input type="hidden" id="mkdf-register-security"
+									name="mkdf-register-security" value="996eb6a9ce"><input type="hidden" name="_wp_http_referer"
+									value="/grid-home/">
+							</div>
+						</fieldset>
+					</form>
+					<div class="mkdf-membership-response-holder clearfix"></div>
+					<script type="text/template" class="mkdf-membership-response-template">
+					<div class="mkdf-membership-response <%= messageClass %> ">
+						<div class="mkdf-membership-response-message">
+							<p><%= message %></p>
+						</div>
+					</div>
+				</script>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="mkdf-password-holder mkdf-modal-holder" data-modal="password">
+	<div class="mkdf-password-content mkdf-modal-content">
+		<div class="mkdf-reset-pass-content-inner mkdf-modal-content-inner" id="mkdf-reset-pass-content">
+			<h2>Reset Password</h2>
+			<div class="mkdf-wp-reset-pass-holder">
+				<div class="mkdf-social-reset-password-holder">
+					<form action="https://biagiotti.qodeinteractive.com/wp-login.php?action=lostpassword" method="post"
+						id="mkdf-lost-password-form" class="mkdf-reset-pass-form">
+						<div>
+							<input type="text" name="user_reset_password_login" class="mkdf-input-field"
+								id="user_reset_password_login" placeholder="Enter username or email" value="" size="20" required="">
+						</div>
+						<div class="mkdf-reset-password-button-holder">
+							<button type="submit" class="mkdf-btn mkdf-btn-medium mkdf-btn-outline"> <span class="mkdf-btn-text">New
+									Password</span> </button>
+						</div>
+					</form>
+					<div class="mkdf-membership-response-holder clearfix"></div>
+					<script type="text/template" class="mkdf-membership-response-template">
+					<div class="mkdf-membership-response <%= messageClass %> ">
+						<div class="mkdf-membership-response-message">
+							<p><%= message %></p>
+						</div>
+					</div>
+				</script>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
