@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="mkdf-content">
+  <div class="mkdf-content-inner">
+    <div class="mkdf-title-holder mkdf-standard-type mkdf-title-va-header-bottom"
+      style="height: 90px;background-color: #fbf9f9" data-height="90">
+      <div class="mkdf-title-wrapper" style="height: 90px">
+        <div class="mkdf-title-inner">
+          <div class="mkdf-grid">
+            <h4 class="mkdf-page-title entry-title">Order Tracking</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mkdf-full-width">
+      <div class="mkdf-full-width-inner">
+        <div class="mkdf-grid-row">
+          <div class="mkdf-page-content-holder mkdf-grid-col-12">
+            <div class="mkdf-row-grid-section-wrapper "
+              style="background-image: url({% static 'wp-content/uploads/2019/09/order-tracking-new-img.jpg' %});background-repeat: repeat">
+              <div class="mkdf-row-grid-section">
+                <div class="vc_row wpb_row vc_row-fluid vc_custom_1568104028004 vc_row-has-fill">
+                  <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-5 vc_col-md-12">
+                    <div class="vc_column-inner">
+                      <div class="wpb_wrapper">
+                        <div class="woocommerce">
+                          <p class="mkdf-empty-cart-custom">perfect shades</p>
+                          <h2 class="mkdf-empty-cart-title">Contact Us</h2>
+                          <h5 class="mkdf-empty-cart-text">At vero eos et accusamus et</h5>
+                          <form action="https://biagiotti.qodeinteractive.com/order-tracking/" method="post"
+                            class="woocommerce-form woocommerce-form-track-order track_order">
+                            <p>To track your order please enter your Order ID in the box below and press the
+                              &quot;Track&quot; button. This was given to you on your receipt and in the
+                              confirmation email you should have received.</p>
+                            <p class="form-row form-row-first"><label for="orderid">Order ID</label> <input
+                                class="input-text" type="text" name="orderid" id="orderid"
+                                placeholder="Order ID, found in your order confirmation email." value=""></p>
+                            <p class="form-row form-row-last"><label for="order_email">Billing email</label>
+                              <input class="input-text" type="text" name="order_email" id="order_email"
+                                placeholder="Billing email, email you used during checkout." value=""></p>
+                            <div class="clear"></div>
+                            <p class="form-row"><button type="submit" class="button" name="track"
+                                value="Track">Track</button></p>
+                            <input type="hidden" id="woocommerce-order-tracking-nonce"
+                              name="woocommerce-order-tracking-nonce" value="0e70734372"><input type="hidden"
+                              name="_wp_http_referer" value="/order-tracking/">
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-7 vc_col-md-12">
+                    <div class="vc_column-inner">
+                      <div class="wpb_wrapper"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

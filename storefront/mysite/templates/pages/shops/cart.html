@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="mkdf-content">
+  <div class="mkdf-content-inner">
+    <div class="mkdf-title-holder mkdf-standard-type mkdf-title-va-header-bottom"
+      style="height: 90px;background-color: #fbf9f9" data-height="90">
+      <div class="mkdf-title-wrapper" style="height: 90px">
+        <div class="mkdf-title-inner">
+          <div class="mkdf-grid">
+            <h4 class="mkdf-page-title entry-title">Cart</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mkdf-container mkdf-default-page-template">
+      <div class="mkdf-container-inner clearfix">
+        <div class="mkdf-grid-row ">
+          <div class="mkdf-page-content-holder mkdf-grid-col-12">
+            <div class="woocommerce">
+              <div class="mkdf-custom-cart-holder">
+                <div class="woocommerce-notices-wrapper"></div>
+                <p class="cart-empty woocommerce-info">Your cart is currently empty.</p>
+                <p class="mkdf-empty-cart-custom">Biagiotti Themes</p>
+                <h5 class="mkdf-empty-cart-text">Looks like you haven&#039;t made your choice yet...</h5>
+                <p class="return-to-shop">
+                  <a class="button wc-backward" href="https://biagiotti.qodeinteractive.com/shop/">
+                    Go Back </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
