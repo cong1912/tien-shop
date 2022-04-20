@@ -1,10 +1,16 @@
+import json
 from django.shortcuts import render
-
+from mysite.services.home.get_home_action import GetHomeAction
 # Create your views here.
 
 def home(request):
-  return render(request, 'pages/home.html', {})
-
+    categories = GetHomeAction().run(request)
+    result = {
+        "categories": categories['data'],
+    }
+    print(result)
+    return render(request, 'pages/home.html',result)
+    
 def aboutus(request):
   return render(request, 'pages/about-us.html', {})
 
